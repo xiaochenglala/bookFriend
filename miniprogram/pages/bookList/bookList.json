@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "书单",
+  "usingComponents": {
+    "van-popup": "vant-weapp/popup",
+    "van-button": "vant-weapp/button",
+    "van-icon": "vant-weapp/icon",
+    "van-toast": "vant-weapp/toast",
+    "van-search": "vant-weapp/search"
+  }
+}

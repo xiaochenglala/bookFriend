@@ -1,0 +1,34 @@
+<!-- <input class='comment' placeholder='写些评价把!' confirm-type='done' bindinput='bindinput' value='{{comment}}'  bindkeyboardheightchange='bindkeyboardheightchange' focus></input> -->
+<!-- <van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="我的评价"
+    type="textarea"
+    placeholder="写些评价吧!"
+    autosize
+    border="{{ true }}"
+    size='large'
+    bind:blur='onBlur'
+  />
+</van-cell-group> -->
+
+<van-tag mark size="large" type="success">我的评价</van-tag>
+<textarea id="content" value="{{comment}}" maxlength="-1" bindinput="getContent"></textarea>
+
+<van-toast id="van-toast" />
+<view style="display:flex">
+<text style='position:relative;top:40rpx;left:10rpx;font-size:40rpx;font-weight:bold'>评分: </text>
+<van-rate
+  style='position:relative;top:35rpx;left:20rpx'
+  value="{{ value }}"
+  size="{{ 25 }}"
+  allow-half
+  color="#f44"
+  void-color="#eee"
+  void-icon="star"
+  bind:change="onChange"/>
+</view>
+<view id='button'>
+  <button type='primary' bindtap='submit'>提交</button>
+  <button type='default' style='margin-top:5rpx' bindtap='goBack'>取消</button>
+</view>

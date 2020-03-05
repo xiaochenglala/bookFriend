@@ -1,0 +1,5 @@
+#book-img {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 20rpx 20rpx 0 0;
+}

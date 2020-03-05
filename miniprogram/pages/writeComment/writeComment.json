@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "写书评",
+  "usingComponents": {
+    "van-tag": "vant-weapp/tag",
+    "van-toast": "vant-weapp/toast",
+    "van-rate": "vant-weapp/rate"
+  },
+  "enablePullDownRefresh": false
+}

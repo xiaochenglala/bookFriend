@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "搜索结果",
+
+  "usingComponents": {
+    "van-popup": "vant-weapp/popup",
+    "van-button": "vant-weapp/button",
+    "van-toast": "vant-weapp/toast"
+  },
+  "enablePullDownRefresh": false
+}

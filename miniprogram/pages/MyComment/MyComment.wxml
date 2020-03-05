@@ -1,0 +1,9 @@
+<view class="my-comment" wx:for="{{myComment}}" wx:key="{{index}}">
+  <image class="avatar-url" src="{{item.avatarUrl}}"></image>
+  <text class="user">{{item.nickName}}</text>
+    <button type='primary' size='mini' class='edit'  bindtap='gotoEdit' data-index='{{index}}'>编辑</button>
+  <button type='warn' size='mini' class='delete' bindtap='onDelete' data-index='{{index}}'>删除</button>
+  <scroll-view class="content" scroll-y>{{item.comment}}</scroll-view>
+</view>
+<van-toast id="van-toast" />
+

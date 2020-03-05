@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-popup": "vant-weapp/popup",
+    "van-button": "vant-weapp/button",
+    "van-icon": "vant-weapp/icon",
+    "van-toast": "vant-weapp/toast"},
+    "navigationBarTitleText": "上传的书"
+}

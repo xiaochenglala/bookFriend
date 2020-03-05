@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/bookList/bookList",
+    "pages/profile/profile",
+    "pages/comment/comment",
+    "pages/writeComment/writeComment",
+    "pages/publishBook/publishBook",
+    "pages/MyComment/MyComment",
+    "pages/searchResult/searchResult",
+    "pages/MyLike/MyLike",
+    "pages/myBook/myBook"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "e6e6e6",
+    "selectedColor": "d81e06",
+    "list": [
+      {
+        "pagePath": "pages/bookList/bookList",
+        "text": "首页",
+        "iconPath": "images/首页1.png",
+        "selectedIconPath": "images/首页.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/我的1.png",
+        "selectedIconPath": "images/我的.png"
+      }
+    ]
+  }
+}

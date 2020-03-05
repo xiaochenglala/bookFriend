@@ -1,0 +1,38 @@
+.book{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.book-img{
+  flex: 2;
+  width: 200rpx;
+  height: 360rpx;
+  margin-right: 20rpx;
+}
+
+.book-info{
+  flex: 3;
+	font-size: 28rpx;
+	line-height: 1.8;
+  position: relative;
+}
+
+.book-title{
+  color: #666;
+  font-size: 40rpx;
+  font-weight: bolder;
+}
+
+.book-comment{
+  height: 60rpx;
+  background: #E54847;
+  color: #fff;
+  font-size: 26rpx;
+}
+
+#add{
+  position: fixed;
+  right: 50rpx;
+  bottom: 200rpx;
+}

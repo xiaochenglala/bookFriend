@@ -1,0 +1,18 @@
+<view class='profile'>
+  <view class="profile-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="profile-name"></open-data>
+</view>
+<button wx:if="{{hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">点击用户授权</button>
+<block wx:else>
+  <van-cell-group>
+    <van-cell title="我的书评" is-link size="large" bind:click="gotoMyComment" />
+  </van-cell-group>
+  <van-cell-group>
+    <van-cell title="我的收藏" is-link size="large" bind:click="gotoMyLike" />
+  </van-cell-group>
+    <van-cell-group>
+    <van-cell title="上传的书" is-link size="large" bind:click="gotoMyBook" />
+  </van-cell-group>
+</block>

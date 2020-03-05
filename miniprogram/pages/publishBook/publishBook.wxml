@@ -1,0 +1,48 @@
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    label="书名："
+    placeholder="请输入书名"
+    border="{{ true }}"
+    bind:change="getTitle"
+    maxlength="18"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    label="作者："
+    placeholder="请输入作者"
+    border="{{ true }}"
+    bind:change="getAuthor"
+    maxlength="13"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    label="类型："
+    placeholder="请输入类型"
+    border="{{ true }}"
+    bind:change="getType"
+    maxlength="13"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ message }}"
+    label="简介："
+    type="textarea"
+    placeholder="请输入书本简介"
+    autosize
+    border="{{ false }}"
+    bind:change="getDetail"
+  />
+</van-cell-group>
+<van-button type="warning" bindtap="uploadImg">上传图片</van-button>
+<view>
+  <image id="book-img" src="{{tempFilePaths}}"></image>
+</view>
+<!-- <view style="position:absolute;top:850rpx">(如果想长传书却觉得有些麻烦,可以在搜索框中搜索"上传",再在"我要上传"这本书的书评处写上想上传的书名即可)</view> -->
+<van-button size="large" type="danger" bindtap="submit">提交</van-button>
+<van-toast id="van-toast" />

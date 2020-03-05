@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "书评",
+    "usingComponents": {
+      "van-button": "vant-weapp/button",
+      "van-toast": "vant-weapp/toast",
+      "van-icon": "vant-weapp/icon",
+      "van-rate": "vant-weapp/rate"
+    }
+}

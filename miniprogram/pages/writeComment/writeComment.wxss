@@ -1,0 +1,15 @@
+/* pages/writeComment/writeComment.wxss */
+#button{
+  width: 100%;
+  position:fixed; 
+  bottom:0;
+}
+
+#content{
+  position: relative;
+  top: 30rpx;
+  left: 30rpx;
+  width: 700rpx;
+  height: 700rpx;
+  border: 1px dotted black;
+}

@@ -1,0 +1,32 @@
+<view>
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    shape='round'
+    bind:search="onSearch"
+    bind:change='onChange'>
+    <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+</view>
+<view class="book" wx:for="{{bookList}}" wx:key='{{index}}'>
+  <image class="book-img" src="{{item.imgFileId}}"></image>
+  <view class="book-info">
+    <view class="book-title">{{item.title}}</view>
+    <view class="author">作者：
+      <text>{{item.author}}</text>
+    </view>
+    <view class="type">类型：
+      <text>{{item.type}}</text>
+    </view>
+    <van-button style="position:absolute;bottom:10rpx;left:30rpx;" size="small" round type="warning" data-index="{{index}}" bind:click="showDetail">简介</van-button>
+    <van-button style="position:absolute;bottom:10rpx;right:30rpx;" size="small" round type="info" data-index="{{index}}" bind:click="gotoCommentList">书评</van-button>
+  </view>
+</view>
+<van-popup custom-style="width:80%;height:80%;font-size:35rpx;" show="{{show}}" bind:close="onClose">
+<image src="{{bookList[index].imgFileId}}" style="width:300rpx;height:400rpx;margin:20rpx; margin-left:150rpx"></image>
+<view style='text-indent:50rpx;padding-left:10rpx'>{{bookList[index].detail}}</view>
+</van-popup>
+
+<van-icon id="add" name="add-o" size="90rpx" bind:click="gotoAdd" />
+<van-toast id="van-toast" />

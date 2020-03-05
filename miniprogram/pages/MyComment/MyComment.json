@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的书评",
+  "usingComponents": {
+    "van-toast": "vant-weapp/toast"
+  }
+}

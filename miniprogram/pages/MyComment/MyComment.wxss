@@ -1,0 +1,46 @@
+/* miniprogram/pages/MyComment/MyComment.wxss */
+.my-comment {
+  position: relative;
+  height: 450rpx;
+  width: 100%;
+  background-color: #FFF0F5;
+  border-bottom: 1px dashed black;
+}
+
+.content {
+  position: absolute;
+  left: 30rpx;
+  bottom: 30rpx;
+  height: 300rpx;
+  width: 90%;
+  word-break: break-all;
+}
+
+.user {
+  position: absolute;
+  left: 120rpx;
+  top: 20rpx;
+  font-size: 50rpx;
+  color: rgb(26, 102, 146); 
+}
+
+.avatar-url{
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.edit{
+position: absolute;
+top: 10rpx;
+right: 180rpx;
+}
+
+.delete{
+position: absolute;
+top: 10rpx;
+right: 10rpx;
+}
